@@ -1,0 +1,481 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.body {
+    font-family: "Josefin Sans", "Alata", sans-serif;
+}
+.hero {
+    background: url(images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color:white;
+    padding: 8%;
+    text-align: left;
+}
+.hamburgermenu {
+    float: right;
+    padding: 4px 6px 0 0;
+}
+.logo {
+    height: 1.4em;
+    display: inline-block;
+}
+#desktop {
+    display: none;
+}
+
+.overlay {
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 8%;
+    color: white;
+    list-style: none;
+}
+
+.overlay .logo {
+    height: 1.5em;
+}
+.overlay .hamburgermenu {
+    height: 1.5em;
+}
+.overlay ul {
+    list-style: none;
+    margin-top: 220px;
+}
+.overlay ul li {
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 35px 0px 35px 0px;
+    opacity: .9;
+}
+
+
+
+
+.hero h1 {
+    margin-top: 200px;
+    font-family: "josefin Sans";
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.guy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    width: 80%;
+}
+
+.info h1 {
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+}
+
+.info p {
+    font-size: 14px;
+    font-family: "Alata";
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.creations .title {
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.object {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    margin-bottom: 20px;
+    background-size: cover;
+    height: 140px;
+}
+
+.object:hover {
+    cursor: pointer;
+}
+
+.text {
+    color: white;
+    text-align: left;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 70px 0px 0px 20px;
+    letter-spacing: 2px;
+}
+#obj1  {
+  background-image:url(images/mobile/image-deep-earth.jpg) ;
+}
+#obj2  {
+    background-image:url(images/mobile/image-night-arcade.jpg) ;
+    
+  }
+#obj3  {
+    background-image:url(images/mobile/image-soccer-team.jpg) ;
+  }
+#obj4  {
+    background-image:url(images/mobile/image-grid.jpg) ;
+  }
+#obj5  {
+    background-image:url(images/mobile/image-from-above.jpg) ;
+  }
+#obj6  {
+    background-image:url(images/mobile/image-pocket-borealis.jpg) ;
+  }
+#obj7  {
+    background-image:url(images/mobile/image-curiosity.jpg) ;
+  }
+#obj8  {
+    background-image:url(images/mobile/image-fisheye.jpg) ;
+  }
+  .desc p {
+    opacity: .7;
+}
+
+
+#button1 {
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+    font-size: 19px;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+}
+#button2 {
+    display: none;
+}
+
+#button1:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+#button2:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family:"Alata";
+    padding-top: 50px;
+}
+
+footer ul li {
+    font-weight: 200;
+    margin:20px;
+    list-style: none;
+}
+ li:hover {
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons .icon {
+    margin: 10px;
+}
+
+.icon:hover {
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+footer p {
+    opacity: 0.4;
+    padding-bottom: 50px;
+}
+.nav {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 800px) {
+    .hamburgermenu {
+        display: none;
+    }
+    .info {
+        display: block;
+    }
+    .overlay {
+        display: none;
+    }
+    .nav {
+        display: block;
+    }
+    .nav ul {
+        display: flex;
+        list-style:none;
+    }
+    .nav ul li {
+        margin-right: 10px;
+        font-family:"Alata";
+        font-weight: 400;
+    }
+    #desktop {
+        display: block;
+    }
+    #footer {
+        display: flex;
+    }
+
+    #mobile {
+        display: none;
+    }
+    .topside {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo {
+        height: 100%;
+    }
+    .hero {
+        background: url(images/desktop/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 650px;
+        height: 100%;
+        padding: 4% 7% 5% 7%;
+    }
+    .hero h1 {
+        width: 450px;
+        height: 250px;
+        font-size: 55px;
+        padding: 30px 20px 20px 30px;
+    }
+    #obj1  {
+        background-image:url(images/desktop/image-deep-earth.jpg) ;
+      }
+      #obj2  {
+          background-image:url(images/desktop/image-night-arcade.jpg) ;
+        }
+      #obj3  {
+          background-image:url(images/desktop/image-soccer-team.jpg) ;
+        }
+      #obj4  {
+          background-image:url(images/desktop/image-grid.jpg) ;
+        }
+      #obj5  {
+          background-image:url(images/desktop/image-from-above.jpg) ;
+        }
+      #obj6  {
+          background-image:url(images/desktop/image-pocket-borealis.jpg) ;
+        }
+      #obj7  {
+          background-image:url(images/desktop/image-curiosity.jpg) ;
+        }
+      #obj8  {
+          background-image:url(images/desktop/image-fisheye.jpg) ;
+        }
+        .object {
+            background-size: cover;
+            height: 600px;
+            margin-left: 15px;
+            margin-right: 15px;
+            width: 20%;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 40px;
+            margin-right: 40px;
+            justify-content: center;
+    
+        }
+        .text {
+            padding: 470px 0px 0px 30px;
+            font-size: 35px;
+        }
+        #button2 {
+            display: block;
+            width: 150px;
+            height: 60px;
+            background-color: white;
+            border: 1px solid black;
+            font-family: "Josefin Sans";
+            text-transform: uppercase;
+            font-size: 19px;
+            font-weight: bold;
+            margin-bottom: 60px;
+            margin-right: 9%;
+            letter-spacing: 2px;
+        }
+        .title {
+            margin-left: 9%;
+            font-size: 40px;
+        }
+        #button1 {
+            display: none;
+        }
+        .upper {
+            display: flex;
+            justify-content: space-between;
+        }
+        .left {
+            display: block;
+        }
+        .right {
+            display: block;
+        }
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .left {
+            text-align: left;
+            margin-left: 8%;
+        }
+        .left img {
+            margin-left: 20px;
+        }
+        .left ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .right {
+            margin-right: 9%;
+            margin-top: 10px;
+        }
+        .icons .icon {
+            margin: 10px;
+        }
+        .icons {
+            justify-content: flex-end;
+        }
+        .creations {
+            margin-bottom: 150px;
+            display: block;
+        }
+}
+
+@media (min-width:1060px) {
+    .hero h1 {
+        width: 600px;
+        height: 300px;
+        font-size: 70px;
+        margin-bottom: 50px;
+        padding: 40px 20px 20px 40px;
+    }
+    .nav ul li {
+        margin-right: 45px;
+        font-family:"Alata";
+        font-weight: 400;
+    }
+    .object:hover {
+        opacity: 0.3;
+        color: black;
+    }
+    .guy {
+        width: 50%;
+        margin-top: 40px;
+        margin-left: 9%;
+        margin-right: auto;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 200px;
+        margin-top: 100px;
+        position: relative;
+    }
+    .desc {
+        width: 50%;
+        position: absolute;
+        background-color: white;
+        left: 48%;
+        top: 40%;
+        height: 400px;
+        overflow: hidden;
+
+    }
+    .desc h1 {
+        font-size: 45px;
+        text-align: left;
+        padding-top: 40px;
+        
+    }
+    .desc p {
+        text-align: left;
+        margin-left: 60px;
+        font-size: 20px;
+    }
+    .object .text:hover {
+        color:black;
+        opacity: 1;
+    }
+
+}
+
+@media (min-width:1600px) {
+    .desc {
+        height: 550px;
+    }
+    .desc h1 {
+        font-size: 70px;
+    }
+    .desc p {
+        font-size: 25px;
+    }
+}
